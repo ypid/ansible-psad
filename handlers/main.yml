@@ -1,0 +1,6 @@
+---
+
+- name: Restart psad
+  service:
+    name: 'psad'
+    state: 'restarted'

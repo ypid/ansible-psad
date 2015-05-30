@@ -1,0 +1,9 @@
+---
+
+service_psad_auto_dl:
+service_psad_auto_dl_group:
+service_psad_auto_dl_host:
+
+service_psad_config:
+  ENABLE_AUTO_IDS: N
+  DISK_MAX_PERCENTAGE: 80

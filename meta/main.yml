@@ -1,0 +1,32 @@
+---
+
+galaxy_info:
+  author: Robin Schneider
+  description: Setup the Port Scan Attack Detector.
+  platforms:
+  - name: Debian
+    versions:
+    - wheezy
+    - jessie
+  categories:
+    - system
+  min_ansible_version: 1.3
+dependencies:
+
+  - role: debops.ferm
+    ferm_input_list:
+      - type: 'custom'
+        dport: []
+        filename: 'log_all_remaining'
+        weight: '99'
+        rules: |
+          LOG log-prefix "iptables-rejected: " log-level warning;
+
+ansigenome_info:
+  github_url: "https://github.com/ypid/ansible-service_psad"
+  git_branch: "master"
+  galaxy_id: ""
+
+  travis: False
+
+  synopsis: |
