@@ -1,10 +1,23 @@
 ## service_psad
 
+[![Ansible Galaxy](http://img.shields.io/badge/galaxy-ypid.service_psad-660198.svg?style=flat)](https://galaxy.ansible.com/list#/roles/3980)
+[![Platforms](http://img.shields.io/badge/platforms-debian-lightgrey.svg?style=flat)](#)
 
 
 Setup the Port Scan Attack Detector.
 
 
+
+### Installation
+
+This role requires at least Ansible `v1.3`. To install it, run:
+
+    ansible-galaxy install ypid.service_psad
+
+To install via git, run either:
+
+    git clone https://github.com/ypid/ansible-service_psad ypid.service_psad
+    git submodule add https://github.com/ypid/ansible-service_psad roles/ypid.service_psad
 
 
 ### Role dependencies
