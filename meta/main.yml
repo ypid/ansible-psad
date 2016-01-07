@@ -27,6 +27,8 @@ ansigenome_info:
   git_branch: "master"
   galaxy_id: "3980"
 
+  beta: True
+
   travis: False
 
   synopsis: |
